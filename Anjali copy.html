@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid green; */
+        }
+        img{
+            margin-left: 30%;
+            height: 500px;
+            width: 40%;
+           
+        }
+        h1{
+            margin-left: 35%;
+            align-self: center;
+            color: green;
+        }
+        p{
+            color: chartreuse;
+            margin-left: 40%;
+        }
+        button{
+            margin-left: 40%;
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+    <script>
+        const sur=document.getElementById('surprise');
+        const res=document.getElementById('res');
+        function myFunc(){
+            document.getElementById('surprise').innerHTML="Having me as friend is the big gift :)"
+        }
+        
+    </script>
+</head>
+<body>
+    <div>
+        <img src="./Anjali.jpeg">
+        <h1>Happy Birthday Anjali</h1>
+        <button id="res" onclick="myFunc()">Gift</button>
+        <p id='surprise'></p>
+    </div>
+</body>
+</html>
